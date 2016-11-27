@@ -1,5 +1,4 @@
 Template.p_login.events({
-
   "submit": function (event, template) {
     event.preventDefault();
     if (Meteor.user()) Meteor.logout();

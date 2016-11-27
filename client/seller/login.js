@@ -19,8 +19,7 @@ Template.s_login.events({
 
     var options = {
       username: username,
-      password: password,
-      type: 's'
+      password: password
     };
 
 
@@ -29,7 +28,8 @@ Template.s_login.events({
       if (error) {
         alert(error.reason);
       } else {
-        FlowRouter.go("index");
+        console.log(22222222)
+        FlowRouter.go("s_index");
       }
     });
   }
