@@ -1,29 +1,22 @@
-.box{
+.list_auct_box{
     position: relative;
     float: left;
     margin-left: 10px;
     margin-bottom: 10px;
-
+    width: 98%;
 }
 
-.boxspan{
-    position: absolute;
-    right: 0;
-
-}
-.content{
+.list_auct_content{
     padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 0 5px #ccc;
     border-radius: 5px;
-    width: 250px;
-    height: 350px;
+    height: 200px;
 }
-.content img{
+.list_auct_content img{
     max-height: 170px;
     max-width: 190px;
 }
-
-.content .boxmx{
-    margin-top: 15px;
+.list_auct_content button{
+    margin: 10px;
 }

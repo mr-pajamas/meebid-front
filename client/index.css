@@ -1,0 +1,55 @@
+.toptype a{
+    margin-left: 20px;
+}
+.ysk .auction-item{
+    font-size:14px;
+}
+.ysk .button{
+    font-size: 14px;
+    display: block;
+    margin: 10px 0 0;
+    width: 180px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+
+}
+.ysk .spec-items {
+    padding: 20px 0;
+    margin: 0 auto;
+    height: 120px;
+    text-align: center;
+}
+
+.ysk .spec-items ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.ysk .spec-items ul li {
+    float: left;
+    width: 120px;
+    overflow: hidden;
+}
+
+.ysk .spec-items ul li+li {
+    padding-left: 20px;
+}
+
+.ysk .spec-items ul li img {
+    width: 100%;
+}
+
+.ysk .spec-items ul li:hover {
+    cursor: pointer;
+}
+.ysk .side-box p{
+    padding:15px 0;
+
+}
+.ysk .contact-info td{
+    font-size:14px !important;
+}

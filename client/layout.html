@@ -1,0 +1,10 @@
+<template name="layout">
+    {{#if isseller}}
+    {{> s_top}}
+    {{> Template.dynamic template=main}}
+    {{/if}}
+    {{#if ispurchaser}}
+        {{> p_top}}
+        {{> p_center}}
+    {{/if}}
+</template>

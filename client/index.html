@@ -1,0 +1,313 @@
+<template name="index">
+        <nav class="navbar navbar-default" role="navigation" style="">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <H1>Meebid</H1>
+                </div>
+                <div class="nav navbar-right">
+                    <form class="navbar-form navbar-left" role="search">
+                        <button type="button" id="tologin" class="btn btn-default">
+                            登录
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            注册
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center toptype">
+                <a>FINE ART</a>
+                <a>DECORATIVE ART</a>
+                <a>JEWELRY</a>
+                <a>COLLECTIBLES</a>
+                <a>FURNITURE</a>
+                <a>ASIAN ART</a>
+            </div>
+        </nav>
+
+    <div class="container">
+
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-2">
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" style="" class="form-control" id="search" placeholder="请输入搜索关键词">
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <button type="button" id="searchbut"  class="btn btn-default" style="margin-left: -25px">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <button type="button" id="addAuctionRes" class="btn btn-default" style="margin-bottom: 20px">时间</button>
+                        <button type="button" id="addAuctionRes" class="btn btn-default" style="margin-bottom: 20px">热度</button>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                   {{#each lots}}
+                    <div class="box">
+                        <div class="content">
+                            <div>
+                                <img class="img-responsive center-block" src="/images/{{img}}">
+                            </div>
+                            <div class="boxmx" style="margin-top: 100px">
+                                <dl>
+                                    <dt>{{name}}</dt>
+                                    <dd>估价<span class="pull-right">{{price}}</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                   {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="lots">
+    <nav class="navbar navbar-default" role="navigation" style="">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <H1>Meebid</H1>
+            </div>
+            <div class="nav navbar-right">
+                <form class="navbar-form navbar-left" role="search">
+                    <button type="button" id="tologin" class="btn btn-default">
+                        登录
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        注册
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <ol class="breadcrumb" style="background-color: white;margin-top: 20px">
+        <li class="active" id="index"><a href="#">首页</a></li>
+    </ol>
+    <div class="ysk">
+    <div class="site-header">
+    </div>
+    <div class="word-bg clearfix">
+        <div class="page-body">
+            <!--面包屑导航-->
+            <div id="auction_item_body" class="auction-item">
+                <div class="auction-item-hd" style="padding-left:50px">
+                    <h1><strong>412</strong> 韩登安 刻寿山石商向前自用印</h1>
+                </div>
+                <div class="auction-item-bd clearfix">
+                    <div class="col-right">
+                        <!--成交-->
+                        <div class="side-box">
+                            <h2>价格信息</h2>
+                            <p>拍品估价：－</p>
+                            <p>起拍价格：
+                                <font>¥</font>6,000 <a href="javascript:void(0)"><i class="bidLadder-icon"></i></a></p>
+                            <p class="items-cont-rt-box-text">
+                                买家佣金：
+                                <strong class="blueTxt">3.00 %</strong>
+                                <i class="question-icon" title="拍卖企业在落槌价的基础上收取的买家佣金"></i>
+                            </p>
+
+                            <a href="javascript:void(0)" class="button blue-bg">报名参加</a>
+                        </div>
+                        <div class="side-box">
+                            <h2>拍卖会</h2>
+                            <p>拍卖名称：中华艺术</p>
+                            <p>起拍时间：2017-01-17 21:00</p>
+                            <p>结束时间：2017-01-17 21:00</p>
+                            <p>取货地址：上海市静安区南京西路</p>
+                            <a href="javascript:void(0)" class="button blue-bg">报名参加</a>
+                        </div>
+
+                        <div class="side-box">
+                            <h2>拍卖公司</h2>
+                            <table width="100%" class="auctioneer-info-table contact-info" border="0">
+                                <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="auctioneer-logo">
+                                            <a href="javascript:void(0)" title="">
+                                                <img src="" alt="企业logo">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td width="42" valign="top">地址：</td>
+                                    <td width="265">湖南长沙天心区</td>
+                                </tr>
+                                <tr>
+                                    <td>电话：</td>
+                                    <td>0731-8888888888</td>
+                                </tr>
+                                <tr>
+                                    <td>邮编：</td>
+                                    <td>410005</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <a href="javascript:void(0)" id="btn_sent_email" class="button blue-bg">向卖家提问</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-left">
+                        <div class="item-picture" style="background:#fff;">
+                            <div class="big-picture" style="width:100%;height:80%;top:0;">
+                                <img class="bigPics" id="bigPics" src="/images/412(1).jpg">
+                            </div>
+                            <div class="spec-items">
+                                <ul>
+                                    <li><img src="/images/412(1).jpg"></li>
+                                    <li><img src="/images/412(1).jpg"></li>
+                                    <li><img src="/images/412(1).jpg"></li>
+                                    <li><img src="/images/412(1).jpg"></li>
+                                    <li><img src="/images/412(1).jpg"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item-description">
+
+                            <dl>
+                                <dt>拍品描述</dt>
+                                <dd>边款：向前同志方家正刻，一九七三年春分节，登安。印文：商向前印（朱）2.5×2.5×8.3cm作者简介：韩登安（1905-1976），原名竞，以字行，一字仲铮，别字耿斋，又署印农、小章，室名容膝楼、物芸斋、寒砚青镫籀古斋，浙江杭州人。西泠印社社员。篆刻家。宗秦汉，酷嗜浙派，间仿皖派。与王福厂交善。著有《西泠印社胜迹留痕》一卷。</dd>
+                            </dl>
+                        </div>
+                        <div class="item-list">
+                            <!--本场其他拍品-->
+                            <h2>本场其它拍品</h2>
+                            <div class="item-list-box">
+                                <div class="the-o-i-b-prev fl" id="toLeftItem"><b id="toLeftItemOne" class="unActive"></b></div>
+                                <div class="the-o-i-b-ulBox float-lf">
+                                    <ul id="newItemList">
+                                        <li class="active">
+                                            <div class="other-i-l-box">
+                                                <a href="javascript:void(0)"><img title="韩登安 刻寿山石商向前自用印" src="./img/267667.jpg"></a>
+                                            </div> <span title="韩登安 刻寿山石商向前自用印">Lot 412</span></li>
+                                        <li>
+                                            <div class="other-i-l-box">
+                                                <a href="javascript:void(0)"><img title="陈左夫 刻青田石商向前自用印 任伯年 刻青玉料任伯年自用印" src="./img/267668.jpg"></a>
+                                            </div> <span title="陈左夫 刻青田石商向前自用印 任伯年 刻青玉料任伯年自用印">Lot 413</span></li>
+                                        <li>
+                                            <div class="other-i-l-box">
+                                                <a href="javascript:void(0)"><img title="陈左夫、吴振华、俞包象、郁重今、方去疾 刻青田、寿山石商向前自用印七方" src="./img/267669.jpg"></a>
+                                            </div> <span title="陈左夫、吴振华、俞包象、郁重今、方去疾 刻青田、寿山石商向前自用印七方">Lot 414</span></li>
+                                        <li>
+                                            <div class="other-i-l-box">
+                                                <a href="javascript:void(0)"><img title="黄易 刻寿山石闲章一对" src="./img/267670.jpg"></a>
+                                            </div> <span title="黄易 刻寿山石闲章一对">Lot 415</span></li>
+                                        <li>
+                                            <div class="other-i-l-box">
+                                                <a href="javascript:void(0)"><img title="陈豫锺 刻寿山石闲章" src="./img/267671.jpg"></a>
+                                            </div> <span title="陈豫锺 刻寿山石闲章">Lot 416</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-tab">
+                            <ul class="auction-oth-inf-t-tit" id="item-tab">
+                                <li id="li_1" class="active">竞价阶梯</li>
+                                <li id="li_2" class="">拍卖规则</li>
+                            </ul>
+                            <div class="auction-oth-inf-t-box" id="sli1" style="display: block;">
+                                <!--竞价阶梯内容-->
+                                <span class="auction-i-c-c-tit">
+
+    <div class="auction-i-c-c-text1"><span>竞价区间</span> <span style="margin-left:67px;">加价幅度</span></div>
+                            <div class="bid-step ovf-hidn">
+                                <div class="bid-step-once float-lf"><b>0</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>1,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>10,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>2,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>5,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>8,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>50,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>5,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>10,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>100,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>10,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>200,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>20,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>50,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>80,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>500,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>50,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>100,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>1,000,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>100,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>2,000,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>200,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>500,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>800,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>5,000,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>500,000</b>
+                                    <label class="left line-height-30 lableTop">-</label>
+                                    <b>1,000,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>10,000,000</b></div>
+                                <div class="bid-step-Connect float-lf"><i></i></div>
+                                <div class="bid-step-twice float-lf">
+                                    <b>1,000,000</b>
+                                </div>
+                                <div class="bid-step-once float-lf"><b>+</b></div>
+                            </div>
+                            </span>
+                            </div>
+                            <div class="auction-oth-inf-t-box" style="display: none;" id="sli2">
+                                000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</template>

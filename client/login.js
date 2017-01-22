@@ -1,4 +1,5 @@
-Template.p_login.events({
+Template.s_login.events({
+
   "submit": function (event, template) {
     event.preventDefault();
     if (Meteor.user()) Meteor.logout();
@@ -21,11 +22,13 @@ Template.p_login.events({
       password: password
     };
 
+
+
     Meteor.commonLogin(options, function (error) {
       if (error) {
         alert(error.reason);
       } else {
-        FlowRouter.go("index");
+        FlowRouter.go("s_index");
       }
     });
   }

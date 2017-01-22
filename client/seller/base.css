@@ -1,0 +1,9 @@
+/*form */
+.form-group .glyphicon-asterisk{
+    color: red;
+    font-size: 6px;
+}
+
+.form-group textarea{
+    height: 150px;
+}

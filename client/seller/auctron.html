@@ -1,0 +1,465 @@
+<template name="s_create_auction">
+    <div class="container">
+        <ol class="breadcrumb" style="background-color: white;margin-top: 20px">
+            <li><a href="#">卖家中心</a></li>
+            <li>创建拍卖场次</li>
+            <li class="active">拍卖基本信息</li>
+        </ol>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">拍卖基本信息</h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">本场名称
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="firstname"
+                                       placeholder="请输入名称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">拍卖开始时间 <span
+                                    class="glyphicon glyphicon-asterisk"></span></label>
+
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="firstname"
+                                       placeholder="请选择">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">拍卖场次类型 <span
+                                    class="glyphicon glyphicon-asterisk"></span></label>
+
+                            <div class="col-sm-5">
+                                <select class="form-control" id="firstname">
+                                    <option>请选择</option>
+                                    <option>线上线下同步</option>
+                                    <option>预览</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">拍卖所在地 <span
+                                    class="glyphicon glyphicon-asterisk"></span></label>
+
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="firstname"
+                                       placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">联系方式 <span
+                                    class="glyphicon glyphicon-asterisk"></span></label>
+
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="firstname"
+                                       placeholder="请输入手机号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">拍卖师姓名 <span
+                                    class="glyphicon glyphicon-asterisk"></span></label>
+
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="firstname"
+                                       placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">拍卖师介绍 <span
+                                    class="glyphicon glyphicon-asterisk"></span></label>
+
+                            <div class="col-sm-5">
+                                <textarea class="form-control" id="firstname"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">上传文件 </label>
+
+                            <div class="col-sm-5">
+                                <input type="file" class="form-control" id="firstname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-9 col-lg-offset-3">
+                                <button type="submit" class="btn btn-primary btn-lg" name="signup" value="Sign up">提交
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="s_list_auction">
+    <div class="container">
+        <ol class="breadcrumb" style="background-color: white;margin-top: 20px">
+            <li><a href="#">卖家中心</a></li>
+            <li class="active">拍卖管理</li>
+        </ol>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">拍卖管理</h3>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="list_auct_box row">
+                            <div class="list_auct_content">
+                                <div class="col-sm-3">
+                                    <img class="img-responsive center-block" src="/images/a1.png">
+                                </div>
+                                <div class="col-sm-6">
+                                    <dl>
+                                        <dt>吉雅翰墨书画精品拍卖专场</dt>
+                                        <dd>20件拍品<span class="pull-right">1个待审核</span></dd>
+                                        <dd>已有12人参与<span class="pull-right">2预出价</span></dd>
+                                        <dd>2016/10/15<span class="pull-right">上海</span></dd>
+                                        <dd>下午2点<span class="pull-right">进行中</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm-3">
+                                    <dl>
+                                        <dd>
+                                            <button type="button" class="btn btn-primary btn-xs center-block btn1">编辑拍品
+                                            </button>
+                                        </dd>
+                                        <dd>
+                                            <button type="button" class="btn btn-primary btn-xs center-block">管理活动
+                                            </button>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_auct_box row">
+                            <div class="list_auct_content">
+                                <div class="col-sm-3">
+                                    <img class="img-responsive center-block" src="/images/a1.png">
+                                </div>
+                                <div class="col-sm-6">
+                                    <dl>
+                                        <dt>吉雅翰墨书画精品拍卖专场</dt>
+                                        <dd>20件拍品<span class="pull-right">1个待审核</span></dd>
+                                        <dd>已有12人参与<span class="pull-right">2预出价</span></dd>
+                                        <dd>2016/10/15<span class="pull-right">上海</span></dd>
+                                        <dd>下午2点<span class="pull-right">进行中</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm-3">
+                                    <dl>
+                                        <dd>
+                                            <button type="button" class="btn btn-primary btn-xs center-block">编辑拍品
+                                            </button>
+                                        </dd>
+                                        <dd>
+                                            <button type="button" class="btn btn-primary btn-xs center-block">管理活动
+                                            </button>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!--拍品列表-->
+<template name="s_list_auction_res">
+    <div class="container">
+        <ol class="breadcrumb" style="background-color: white;margin-top: 20px">
+            <li><a href="#">卖家中心</a></li>
+            <li><a href="#">拍卖管理</a></li>
+            <li class="active">XXX拍卖会拍品</li>
+        </ol>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">XXX拍卖会拍品</h3>
+            </div>
+            <div class="panel-body">
+                <button type="button" id="addAuctionRes" class="btn btn-primary" style="margin-bottom: 20px">添加</button>
+                <div class="col-sm-12">
+                    <div class="box">
+                        <div class="content">
+                            <div>
+                                <img class="img-responsive center-block" src="/images/a1.png">
+                            </div>
+                            <div class="boxmx">
+                                <dl>
+                                    <dt>物品名称</dt>
+                                    <dd>估价<span class="pull-right">10000RMB</span></dd>
+                                </dl>
+                                <div style="text-align: center">
+                                <button type="button" class="btn btn-primary">编辑</button>
+                                <button type="button" class="btn btn-primary">删除</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<!-- 添加拍品 -->
+<template name="s_add_auction_res">
+    <div class="container">
+        <ol class="breadcrumb" style="background-color: white;margin-top: 20px">
+            <li><a href="#">卖家中心</a></li>
+            <li>拍卖管理</li>
+            <li class="active">添加拍品</li>
+        </ol>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">拍品基本信息</h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">名称
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="firstname"
+                                       placeholder="请输入名称">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">起拍价
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="firstname"
+                                       placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">估价
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="firstname"
+                                       placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">分类
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <select class="form-control" id="firstname">
+                                    <option>FINE ART</option>
+                                    <option>DECORATIVE ART</option>
+                                    <option>JEWELRY</option>
+                                    <option>COLLECTIBLES</option>
+                                    <option>FURNITURE</option>
+                                    <option>ASIAN ART</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">介绍 <span
+                                    class="glyphicon glyphicon-asterisk"></span></label>
+                            <div class="col-sm-5">
+                                <textarea class="form-control" id="firstname"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">上传图片 </label>
+                            <div class="col-sm-5">
+                                <input type="file" class="form-control" id="firstname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-9 col-lg-offset-3">
+                                <button type="submit" class="btn btn-primary btn-lg" id="signup" value="Sign up">提交
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!--公司资料-->
+<template name="s_info">
+    <div class="container">
+        <ol class="breadcrumb" style="background-color: white;margin-top: 20px">
+            <li><a href="#">卖家中心</a></li>
+            <li class="active">公司资料</li>
+        </ol>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">基本资料</h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">用户名
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">monipeixun</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">邮箱地址
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">2332432@QQ.com</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">公司名称
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">联拍在线湖南</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">公司简称
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">联拍在线湖南</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">法人代表
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">陈</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">国/省/市
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">中国湖南长沙</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">邮编
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">410005</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">营业执照
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">88888888</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">
+                            </label>
+
+                            <div class="col-sm-5">
+                                <img src="/images/yyzz.jpg" style="height: 200px"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">组织机构代码
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">666666666</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">
+                            </label>
+
+                            <div class="col-sm-5">
+                                <img src="/images/zzjgdm.jpg" style="height: 200px"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">税务登记证号码
+                                <span class="glyphicon glyphicon-asterisk"></span>
+                            </label>
+
+                            <div class="col-sm-5">
+                                <label class="control-label">99999999999</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-3 control-label">
+                            </label>
+
+                            <div class="col-sm-5">
+                                <img src="/images/swdj.jpg" style="height: 200px"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-9 col-lg-offset-3">
+                                <button type="submit" class="btn btn-primary" id="signup" value="Sign up">修改信息
+                                </button>
+                                <button type="submit" class="btn btn-primary" id="signup" value="Sign up">修改密码
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

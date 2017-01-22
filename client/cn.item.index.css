@@ -1,0 +1,190 @@
+﻿@charset "utf-8";
+.ysk .word-bg {  background:url("../img/site-bg.jpg") no-repeat center top; }
+.ysk .page-body { width:1200px; margin:0 auto;  }
+.ysk .noactive { color:#757575; }
+
+/*面包屑导航*/
+.ysk .crumbs-nav { padding:15px 0 15px 0; border-bottom:1px solid #e3e3e3; }
+
+/*拍品内容*/
+.ysk.auction-item { font-size:12px; }
+
+/*页面按钮*/
+.ysk .btn-save-item i { display:inline-block; width:20px; height:20px; margin-right:7px; vertical-align:text-bottom; background:url(../img/icon-bg.png) -223px -169px no-repeat; }
+.ysk .btn-reminders i {  display:inline-block; width:22px; height:22px; margin-right:2px; vertical-align:middle; background:url(../img/item.index/clock.png) no-repeat; }
+.ysk .btn-reminders { margin-right:10px; }
+.ysk .btn-register { display:inline-block; cursor:pointer; vertical-align:middle; width:180px; height:26px; line-height:26px; text-align:center; color:#fff; font-weight:bold; }
+.ysk .btn-justshow { display:inline-block; cursor:pointer; vertical-align:middle; padding:0 25px; height:26px; line-height:26px; text-align:center; color:#fff; font-weight:bold; margin-left:10px; }
+.ysk .btn-enter { display:inline-block; vertical-align:middle; width:100px; height:26px; line-height:26px; text-align:center; color:#fff; font-weight:bold; cursor:pointer; margin-left:7px;  }
+.ysk .active,.need-login { cursor:pointer; }
+.ysk #auction_item_result h3.need-login { font-size:14px; }
+
+
+/*拍品头部*/
+.ysk .auction-item-hd h1 { font-size:22px; color:#222; height:55px; line-height:55px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-weight:400; }
+.ysk .auction-item-hd { }
+.ysk .auction-item-hd .split { margin:0 5px; }
+.ysk .auction-item-hd .row {margin:10px 0; }
+.ysk .auction-start-time { margin-right:10px; }
+.ysk .auction-start-time .closed { color:#539217; }
+
+/*注册提示*/
+.ysk .regist-tips {width:1198px; margin:0 auto; border:1px solid #dae6ec; margin-bottom: 12px; background: #eff5f8; position:relative;}
+/*.regist-tips b {display:block; width:12px; height:9px; background:url(../img/auction.index/tips-top-arrow.jpg) no-repeat; position:absolute; top:-9px; right:95px;}*/
+.ysk .regist-tips i {display:block; width:28px; height:25px; background:url(../img/auction.index/gantanhao.jpg) no-repeat;position:absolute; top:16px; left:16px;}
+.ysk .regist-tips a {color:#69b2d2;}
+.ysk .regist-tips span{color:#4a4331; font-size:13px;  line-height:20px;  font-family:Arial,微软雅黑; width:1066px; display:block; padding:10px 10px 10px 85px;}
+.ysk .regist-tips a.tips-close-i {display:block; width:19px; height:19px; background:url(../img/auction.index/close-icon.jpg) no-repeat; position:absolute; right:20px; top:19px;}
+
+/*规则*/
+.ysk .condition-bd { border:1px solid #ccc; padding:10px; height:200px; line-height:1.5; overflow-y:scroll; margin-bottom:20px; }
+.ysk .condition-bar { text-align:center; }
+.ysk #btn_close_condition {display:block; margin:10px auto 0; width:200px; height:27px; border:none; border-radius:2px; color:#fff; cursor:pointer;}
+
+
+/*拍品内容*/
+.ysk .auction-item-bd .col-left { float:left; width:815px; }
+.ysk .auction-item-bd .col-right { float:right; width:370px; }
+
+/*拍品图片*/
+.ysk .item-picture { width:815px; height:561px; background:#ccc; padding:1px 0; }
+.ysk .slide-picture { padding:10px; width:78px; height:540px; float:left; }
+.ysk .small-picture-list { width:77px; height:497px; overflow:hidden; margin:0 auto; position:relative; /*解决ie7不能溢出*/ }
+.ysk .small-picture-list { }
+.ysk .small-picture-list li{ margin:5px 0; padding:5px;  background:#fff; }
+.ysk .small-picture-list li.active { background:#777; }
+.ysk .small-picture-list div{ overflow:hidden; width:67px; /*根据实际情况设定*/ height:67px; /*根据实际情况设定*/ position:relative; text-align:center; *font-size:58px;/*约为高度的0.873*/ line-height:1; *font-family:Arial;/*防止非utf-8引起的hack失效问题，如gbk编码*/ }
+.ysk .small-picture-list div img { max-width:67px; max-height:67px; margin:auto; position:absolute; *position:static;  top:0; left:0; bottom:0; right:0; *vertical-align:middle; opacity:0.8; filter: alpha(opacity=80);  }
+
+.ysk .btn-slide-up, .btn-slide-down { display: block; width:77px; height:17px; cursor:pointer; }
+.ysk .btn-slide-up {  background:url(../img/item.index/upArrow.jpg) no-repeat; margin-bottom:5px; }
+.ysk .btn-slide-down { background:url(../img/item.index/dowArrow.jpg) no-repeat; margin-top:5px; }
+.ysk .big-picture { width:717px; height:561px; position:relative; text-align:center; *display: block; *font-size:489px; /*约为高度的0.873*/ *font-family:Arial;/*防止非utf-8引起的hack失效问题，如gbk编码*/ overflow:hidden; }
+.ysk .big-picture img{ max-width:715px; max-height:561px; margin: auto; position: absolute;  *position:static; *vertical-align:middle;  top: 0; left: 0; right: 0;  }
+
+/*拍品描述*/
+.ysk .item-description {padding:20px; border:solid 1px #ddd;}
+.ysk .third-tools {border-bottom:solid 1px #eaeaea; height:40px;}
+.ysk .third-tools div.fl {width:430px; height:40px;}
+.ysk .third-tools div.fl span.share-title-text {font-size:12px; float:left; line-height:30px; color:#888; margin-right:10px;}
+.ysk .third-tools div.fr {width:170px; height:40px;}
+.ysk .third-tools div.fr a {display:block; width:60px; height:40px; float:left; margin-left:25px; font-size:14px; text-align:center; color:#888;}
+.ysk .third-tools div.fr a.unActive {color:#ccc; cursor:default;}.third-tools div.float-rt a.unActive:hover {height:36px; border-bottom:solid 5px #fff; color:#ccc;}
+.ysk .third-tools div.fr a:hover {height:36px; border-bottom:solid 5px #93bbcd; color:#69b2d2;}
+.ysk .item-description {}
+.ysk .item-description dt {font-size:14px; font-weight:bold; margin-top:15px;}
+.ysk .item-description dd {font-size:12px; margin-top:15px; line-height:18px;}
+
+/*本场其他拍品*/
+.ysk .item-list {border:solid 1px #ddd; padding:20px 0; margin:15px 0;}
+.ysk .item-list h2 { font-size:14px; font-weight:bold; padding-left:20px;}
+.ysk .item-list-box { margin-top:18px; overflow:hidden; *zoom:1; }
+.ysk .the-o-i-b-prev,.the-o-i-b-next {width:34px;height:70px; cursor:pointer; }.the-o-i-b-prev b,.the-o-i-b-next b {display:block; width:15px; height:23px; background:url(img/icon-bg.png) -380px -19px no-repeat; float:left; margin:23px 0 0 9px;}
+.ysk .the-o-i-b-next b {background:url(../img/icon-bg.png) -395px -19px no-repeat;}
+.ysk .the-o-i-b-prev b.unActive,.the-o-i-b-next b.unActive {opacity:.3; filter:alpha(opacity=30); cursor:default;}
+.ysk .the-o-i-b-ulBox {width:745px; overflow:hidden;}
+.ysk .item-list-box ul {width:750px; overflow:hidden;}
+.ysk .item-list-box ul li {width:70px; float:left; margin-right:5px;}
+.ysk .item-list-box ul li div {width:68px; height:68px; border:solid 1px #e3e3e3; overflow:hidden;}
+.ysk .item-list-box ul li.active div {background:#666; border:solid 1px #666;}
+.ysk .item-list-box ul li div a {display: block; width:60px; height:60px; margin:4px 0 0 4px; position:relative; text-align:center;*font-size:52px;*font-family:Arial;}
+.ysk .item-list-box ul li div img {max-width:60px; max-height:60px; margin: auto;  position: absolute;  *position:static; *vertical-align:middle; top: 0; left: 0; bottom: 0; right: 0; }
+.ysk .item-list-box ul li:hover div img {opacity:0.8; filter:alpha(opacity=80);}
+.ysk .item-list-box ul li:hover span {color:#69b2d2}
+.ysk .item-list-box ul li span { display:block; text-align:center; font-size:12px; margin-top:5px;}
+
+.ysk .item-tab { border:1px solid #d1d1d1; margin:15px 0; }
+
+/*tab项*/
+/*物流条款等*/
+.ysk .auction-otherinfo-tab {width:813px; margin-top:15px; border:solid 1px #ddd;}
+.ysk .auction-oth-inf-t-tit {height:47px; background:#f0f0f0; border-bottom:solid 1px #d1d1d1;}
+.ysk .auction-oth-inf-t-tit li {float:left; width:128px; height:47px; font-weight:bold; border-right:solid 1px #d1d1d1; text-align:center; line-height:45px; cursor:pointer; font-size:14px; position:relative; top:1px;}
+.ysk .auction-oth-inf-t-tit li.active {background:#fff; color:#51a7cd; border-bottom:solid 1px #fff; font-weight:bold;}
+.ysk .auction-oth-inf-t-box {padding:20px; font-size:13px; line-height:normal; }
+
+/*交通与运输小贴士*/
+.ysk .descri-tips-box {width:370px; height:auto; margin-bottom:15px; background:#f4f4f4; position:relative;}
+.ysk .descri-tips-box h2 {font-size:14px; color:#222; padding:20px 0 0 20px;}
+.ysk .tips-link-icon {position:absolute; top:-8px; right:-7px;}
+.ysk .descri-tips {width:330px; padding:0 20px; margin-top:15px; height:323px; overflow:hidden;}
+.ysk .descri-tips dl {width:330px;  margin:0 auto; padding:10px 0; border-bottom:solid 1px #e7e7e7;}
+.ysk .descri-tips dl dt {font-size:12px; color:#222; font-weight:bold;}
+.ysk .descri-tips dl dd {font-size:12px; line-height:18px; color:#555; margin-top:10px; padding:0 0 0 15px;}
+.ysk .descri-tips .serv-tel {font-size:18px; color:#2a2a2a; padding:10px 0 15px 12px; display:block;}
+.ysk .descri-tips-open {width:330px; padding:10px 20px 0; text-align:center; height:35px; background:#e1e5e7; position:relative; font-size:13px; cursor:pointer;}
+
+
+/*拍品详情页面右边大区样式*/
+.ysk .side-box {width:330px; padding:20px; height:auto; margin-bottom:15px; background:#f4f4f4; position:relative;}
+.ysk .side-box h2 {font-size:14px; color:#222; font-weight:bold; margin-bottom:10px; }
+.ysk .side-box p { padding:4px 0; }
+
+
+
+.ysk .leave-bid {}
+.ysk .leave-bid h3 {font-size:18px;  font-weight:bold; }
+.ysk .leave-bid h3 span {font-size:14px; color:#757575; font-weight:normal;}
+.ysk .leave-bid .row1 { margin:12px 0; padding-bottom:12px; border-bottom:1px solid #ccc; }
+.ysk .my-bid-record { margin:12px 0; font-size:12px; }
+.ysk .leave-bid .row2 { }
+.ysk .leave-bid span.leaveBid-currency { margin-right:5px;}
+.ysk .leave-bid input.leave-bid-txt { width:100px; height:27px; line-height:27px; padding:0 3px; border:solid 1px #d3d3d3; border-radius:2px; }
+.ysk .leave-bid input.btn-leave-bid { width:100px; height:27px; border:none;margin:1px 0 0 5px; border-radius:2px; font-weight:bold; cursor:pointer; color:#fff;}
+
+.ysk .btn-bid-reminders i {  display:inline-block; width:22px; height:22px; margin-right:2px; vertical-align:middle; background:url(../img/item.index/clock.png) no-repeat; }
+.ysk .btn-bid-reminders { }
+
+.ysk .question-icon {display:inline-block; width:17px; height:17px; background:url(../img/icon-bg.png) no-repeat -359px 0; position:relative; top:2px; left:8px;}
+.ysk .bidLadder-icon {display:inline-block; width:17px; height:17px; background:url(../img/icon-bg.png) no-repeat -359px -18px; position:relative; top:4px;  left:8px; }
+
+.ysk .auctioneer-info-table th{ padding:4px 0; }
+.ysk .auctioneer-info-table td{ padding:4px 0; }
+.ysk .auctioneer-logo {width:200px; height:108px; border:solid 1px #eee; background:#fff; position:relative; text-align:center;*display:block;*font-size:94px; *line-height:1; *font-family:Arial;}
+.ysk .auctioneer-logo img {max-width:200px; max-height:108px; margin:auto;  position:absolute; *position:static; vertical-align:middle;  top:0; left:0; bottom:0; right:0; }
+
+.ysk .askFor, .askFor:visited {display:block; margin:10px 0 0; width:180px; height:26px; line-height:26px; border-radius:3px; color:#fff; text-align:center; }
+.ysk .askFor:hover {color:#fff; opacity:0.8; filter:alpha(opacity=80);}
+
+.ysk span.side-box-text {font-size:12px; display:block; margin-top:8px;}
+.ysk .bid-history { margin-top:10px; }
+.ysk .bid-history .bid-history-data { max-height:208px; overflow-y:auto; overflow-x:hidden; position:relative; }
+.ysk .list-bid-history { max-height:200px; overflow-x:hidden; overflow-y:auto; }
+
+/*场次信息展开区域*/
+.ysk .auctn-info {width:1200px; height:auto; margin:10px auto 0;}
+.ysk .auctn-info-tit {width:100%; height:33px; background:#656d72; overflow:hidden; cursor:pointer;}
+.ysk .auctn-info-tit:hover {background:#555d62;}
+.ysk .auctn-info-tit i {font:normal 14px/33px "Arial","Microsoft Yahei","微软雅黑"; color:#fff; padding:0 0 0 10px;}
+.ysk .auctn-info-tit span {font:normal 14px/33px "Arial","Microsoft Yahei","微软雅黑"; color:#fff; padding-right:32px; position:relative;}
+.ysk .auctn-info-tit span b {font:bold 30px Arial; color:#fff; position:absolute; top:0;  right:10px;}
+.ysk .auction-info-cont {display:none; width:1198px; background:#fff; border:solid 1px #d1d1d1; border-top:none; background:url(../img/auctn-info-line.gif) repeat-y;}
+.ysk .auction-i-c-l {width:250px; padding:20px;}
+.ysk table.auctioneer-info-table td {font-size:12px; color:#666;}
+.ysk .auctn-company {font-size:13px; display:inline-block; margin:10px 0 5px;}
+.ysk .auctn-company:hover {color:#69b2d2; text-decoration:none;}
+.ysk .auctioneer-logo-box {width:200px; height:108px; border:solid 1px #eee; background:#fff; position:relative; text-align:center;*display: block;*font-size: 94px;*font-family:Arial;}
+.ysk .auctioneer-logo-box img {max-width:200px; max-height:108px; margin: auto;  position: absolute; *position:static;  top: 0; left: 0; bottom: 0; right: 0; }
+.ysk .askFor {display:block; margin:10px 0 0; width:180px; height:26px; border-radius:3px; color:#fff; font:normal 13px/26px "Arial","Microsoft Yahei","微软雅黑"; text-align:center;}.askFor:hover {color:#fff; opacity:0.8; filter: alpha(opacity=80);}
+.ysk .auction-i-c-c {width:468px; padding:20px;}
+.ysk span.auction-i-c-c-tit {font-size:14px; font-weight:bold; color:#222; display:block; margin-bottom:3px;}
+.ysk div.auction-i-c-c-text {font:normal 12px/17px "Arial","Microsoft Yahei","微软雅黑"; color:#666; margin-bottom:20px; max-height:200px; overflow-y:auto;}
+.ysk div.auction-i-c-c-text1 {font:normal 12px/22px "Arial","Microsoft Yahei","微软雅黑"; color:#666; margin-bottom:10px;}
+.ysk .auction-i-c-r {width:360px; padding:20px;}
+.ysk .bid-step {width:460px; overflow:hidden; }
+.ysk .lableTop { margin-top:5px; float:left; color:#f4f4f4; }
+.ysk .bid-step-once {height:40px;}
+.ysk .bid-step-once b,.bid-step-twice b {display:block; float:left; width:88px; height:25px; border:solid 1px #949494; background:#fafafa; text-align:center; font:bold 13px/25px Arial, Helvetica, sans-serif; color:#444444; border-radius:3px; cursor:default;}
+.ysk .bid-step-Connect {height:40px; position:relative; top:18px;}
+.ysk .bid-step-Connect i {display:block; width:18px; height:31px; background:url(../img/icon-bg.png) no-repeat -317px -96px; margin:0 5px;}
+.ysk .bid-step-twice {width:340px; height:40px;  position:relative; top:20px;}
+.ysk .bid-step-twice b {width:75px; margin-right:3px;}
+.ysk table.Premium-table {font-size:12px; border:solid #f4f4f4; border-width:1px 0px 0px 1px; margin-bottom:10px;}
+.ysk table.Premium-table td {border:solid #f4f4f4; border-width:0px 1px 1px 0px; padding-left:10px; height:25px;}
+
+/*auction_item_result*/
+.ysk #auction_item_result h3{ font-size:18px; font-weight:bold; }
+.ysk #list_bidlive_price h5 { margin:10px 0; }
+.ysk #list_bidlive_price table { width:100%; }
+.ysk #list_bidlive_price table th{ background:#d1d1d3; text-align:left; padding:3px 0 3px 10px; font-size:12px; }
+.ysk #list_bidlive_price table td{ background:#fff; text-align:left; padding:3px 0 3px 10px; font-size:12px; }
