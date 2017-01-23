@@ -12,6 +12,10 @@ Template.index.events({
         event.preventDefault();
         FlowRouter.go("login");
     },
+    "click #toregist": function (event, template) {
+        event.preventDefault();
+        FlowRouter.go("regist");
+    },
 
     "click .content": function (event, template) {
         event.preventDefault();
@@ -53,6 +57,17 @@ Template.lots.events({
     "click #index": function (event, template) {
         event.preventDefault();
         FlowRouter.go("index");
+    }
+});
+
+Template.regist.events({
+    "click #index": function (event, template) {
+        event.preventDefault();
+        FlowRouter.go("index");
+    },
+    "click #signup": function (event, template) {
+        event.preventDefault();
+        FlowRouter.go("registinfo");
     }
 });
 
