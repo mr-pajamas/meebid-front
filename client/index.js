@@ -57,6 +57,10 @@ Template.lots.events({
     "click #index": function (event, template) {
         event.preventDefault();
         FlowRouter.go("index");
+    },
+    "click .joinbut": function (event, template) {
+        event.preventDefault();
+        FlowRouter.go("index");
     }
 });
 
