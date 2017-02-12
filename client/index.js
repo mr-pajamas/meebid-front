@@ -60,7 +60,7 @@ Template.lots.events({
     },
     "click .joinbut": function (event, template) {
         event.preventDefault();
-        FlowRouter.go("index");
+        FlowRouter.go("applyinfo");
     }
 });
 
@@ -72,6 +72,21 @@ Template.regist.events({
     "click #signup": function (event, template) {
         event.preventDefault();
         FlowRouter.go("registinfo");
+    }
+});
+
+
+Template.applyinfo.events({
+    "click #signup": function (event, template) {
+        event.preventDefault();
+        FlowRouter.go("index");
+    }
+});
+
+Template.registinfo.events({
+    "click #signup": function (event, template) {
+        event.preventDefault();
+        FlowRouter.go("index");
     }
 });
 
